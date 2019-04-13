@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    url: jdbc:mysql://47.107.163.168:3306/sell?useUnicode=true&characterEncoding=UTF-8&useSSL=false&jdbcCompliantTruncation=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: hsp123
+  jpa:
+    show-sql: true
+  redis:
+    host: 47.107.163.168
+    port: 6379
+    password: Hsp0701
+server:
+ context-path: /sell
+projectUrl:
+  wechatMpAuthorize: http://seppel.natapp1.cc
+  wechatOpenAuthorize: http://seppel.natapp1.cc
+  sell: http://localhost:8080
+security:
+  oauth2:
+    resource:
+      filter-order: 3
+authentication:
+  oauth:
+    clientid: clientid
+    secret: secret
+    tokenValidityInSeconds: 1800
+wechat:
+  # 微信授权 id
+#  mpAppId: wx0465fe3767346d03
+#  mpAppSecret: 98f3f91786611085871483c1b799aaf5
+  mpAppId: wxdc024d3213e02278
+  mpAppSecret: 7c20c0c1432b9903fc63962fe50599ec
+  openAppId: xxxxxxxxxxxxxxxxxx
+  openAppSecret: xxxxxxxxxxxxxxxxxxxxx
+  mchId: 1483469312
+  mchKey: C5245D70627C1F8E9964D494B0735025
+  keyPath:  C:/Users/Hasee/Desktop/SpringBoot_Wechat_Sell/src/main/resources/h5.p12
+  notifyUrl: http://seppel.natapp1.cc/notify
+  templateId:
+    orderStatus: kahmCfZjV-2jORZ4yFti9-69smaV3gQ1lFFCDKL_vjI
+    payStatus: kahmCfZjV-2jORZ4yFti9-69smaV3gQ1lFFCDKL_vjI
